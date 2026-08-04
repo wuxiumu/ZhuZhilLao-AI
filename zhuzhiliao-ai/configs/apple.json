@@ -7,15 +7,15 @@
   "description": "Apple Intelligence 将 AI 带入每一个苹果设备，隐私至上。",
   "logo": "apple.svg",
   "colors": {
-    "accent": "#A2AAAD",
-    "accentDim": "#848c8f",
-    "paper": "#f5f5f7",
+    "accent": "#0071e3",
+    "accentDim": "#0051a5",
+    "paper": "#ffffff",
     "ink": "#1d1d1f",
-    "glow": "#A2AAAD",
+    "glow": "#0071e3",
     "bg": [
-      "#1d1d1f",
-      "#3a3a3c",
-      "#58585a"
+      "#ffffff",
+      "#f5f5f7",
+      "#e8e8ed"
     ]
   },
   "quotes": [

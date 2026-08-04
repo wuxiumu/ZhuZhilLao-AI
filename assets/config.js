@@ -12,7 +12,7 @@ window.CGOS_CONFIG = {
 
   // 底部版权和链接配置
   FOOTER: {
-    copyright: '© 2024 cgos.cc. All rights reserved.',
+    copyright: '© 2025 ZhuZhilLao-AI. All rights reserved.',
     poweredBy: 'Powered by PHP + Redis',
     statsUrl: 'https://v6.51.la/s/DXb51v7uEZ9wCB4',
     links: [

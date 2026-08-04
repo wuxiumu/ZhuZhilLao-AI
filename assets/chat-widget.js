@@ -185,6 +185,9 @@
     loadMessages();
     if (pollTimer) clearInterval(pollTimer);
     pollTimer = setInterval(loadMessages, POLL_INTERVAL);
+
+    // 暴露全局函数供外部调用
+    window.openChatWidget = openModal;
   }
 
   init();
