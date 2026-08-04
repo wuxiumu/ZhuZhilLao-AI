@@ -8,5 +8,18 @@
  */
 window.CGOS_CONFIG = {
   API_BASE: '/api',
-  GITHUB_URL: 'https://github.com/wuxiumu/ZhuZhilLao-AI'
+  GITHUB_URL: 'https://github.com/wuxiumu/ZhuZhilLao-AI',
+
+  // 底部版权和链接配置
+  FOOTER: {
+    copyright: '© 2024 cgos.cc. All rights reserved.',
+    poweredBy: 'Powered by PHP + Redis',
+    statsUrl: 'https://v6.51.la/s/DXb51v7uEZ9wCB4',
+    links: [
+      { text: 'GitHub 仓库', url: 'https://github.com/wuxiumu/ZhuZhilLao-AI', target: '_blank' },
+      { text: 'cgos.cc', url: 'https://cgos.cc', target: '_blank' }
+      // 可添加更多友情链接
+      // { text: '示例链接', url: 'https://example.com', target: '_blank' }
+    ]
+  }
 };

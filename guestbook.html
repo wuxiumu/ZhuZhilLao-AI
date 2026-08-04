@@ -113,16 +113,35 @@
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 cgos.cc. All rights reserved.</p>
-      <p>Powered by PHP + Redis |
-        <a href="https://v6.51.la/s/DXb51v7uEZ9wCB4" target="_blank">站点统计</a>
-      </p>
+    <div class="footer-bottom" id="footer-bottom">
+      <!-- 动态内容由 JavaScript 生成 -->
     </div>
   </div>
 </footer>
 
 <script src="assets/config.js"></script>
+<script>
+// 动态生成底部版权信息
+(function() {
+  const config = window.CGOS_CONFIG || {};
+  const footer = config.FOOTER || {};
+  const footerBottom = document.getElementById('footer-bottom');
+
+  if (footerBottom) {
+    let linksHtml = '';
+    if (footer.links && footer.links.length > 0) {
+      linksHtml = footer.links.map(link =>
+        `<a href="${link.url}" target="${link.target || '_blank'}">${link.text}</a>`
+      ).join(' | ');
+    }
+
+    footerBottom.innerHTML = `
+      <p>${footer.copyright || '© 2024 cgos.cc. All rights reserved.'}</p>
+      <p>${footer.poweredBy || 'Powered by PHP + Redis'}${footer.statsUrl ? ` | <a href="${footer.statsUrl}" target="_blank">站点统计</a>` : ''}${linksHtml ? ` | ${linksHtml}` : ''}</p>
+    `;
+  }
+})();
+</script>
 <script src="assets/main.js"></script>
 <script src="assets/chat-widget.js"></script>
 
