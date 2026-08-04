@@ -1,0 +1,38 @@
+{
+  "id": "apple",
+  "name": "Apple",
+  "subtitle": "Apple Intelligence",
+  "seal": "AI",
+  "category": "消费电子",
+  "description": "Apple Intelligence 将 AI 带入每一个苹果设备，隐私至上。",
+  "logo": "apple.svg",
+  "colors": {
+    "accent": "#A2AAAD",
+    "accentDim": "#848c8f",
+    "paper": "#f5f5f7",
+    "ink": "#1d1d1f",
+    "glow": "#A2AAAD",
+    "bg": [
+      "#1d1d1f",
+      "#3a3a3c",
+      "#58585a"
+    ]
+  },
+  "quotes": [
+    "Think Different",
+    "The people who are crazy enough to think they can change the world are the ones who do",
+    "Innovation distinguishes between a leader and a follower",
+    "Design is not just what it looks like. Design is how it works",
+    "Privacy is a fundamental human right",
+    "Apple Intelligence: AI built for you",
+    "Powerful. Personal. Private.",
+    "The best AI is the AI you can trust"
+  ],
+  "lore": [
+    "Think Different · 隐私优先",
+    "Apple Intelligence 来了"
+  ],
+  "audio": "/assets/audio/clean-bamboo.wav",
+  "echo": "Think",
+  "motif": "apple"
+}

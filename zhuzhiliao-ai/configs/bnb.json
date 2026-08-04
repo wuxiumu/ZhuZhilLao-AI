@@ -1,0 +1,33 @@
+{
+    "id": "bnb",
+    "name": "BNB",
+    "subtitle": "币安生态代币 · 交易所之王",
+    "seal": "Ⓑ",
+    "category": "加密货币",
+    "description": "BNB 是币安交易所的平台代币，从 ERC-20 迁移到独立链，支撑币安智能链 (BSC) 生态，是全球市值前五的加密货币。",
+    "logo": "bnb.svg",
+    "colors": {
+      "accent": "#F3BA2F",
+      "accentDim": "#d4a028",
+      "paper": "#fffaef",
+      "ink": "#1a1408",
+      "glow": "#F3BA2F",
+      "bg": ["#1a1408", "#4d3a0f", "#F3BA2F"]
+    },
+    "quotes": [
+      "Build and Build",
+      "The Exchange Token",
+      "Powering the BSC Ecosystem",
+      "Deflationary by Design",
+      "From Exchange to Infrastructure",
+      "Community Driven Innovation",
+      "The Fuel of Binance Smart Chain"
+    ],
+    "lore": [
+      "币安创世 · BSC 生态燃料",
+      "季度销毁 · 通缩模型"
+    ],
+    "audio": "/assets/audio/clean-bamboo.wav",
+    "echo": "Ⓑ",
+    "motif": "bnb"
+  }

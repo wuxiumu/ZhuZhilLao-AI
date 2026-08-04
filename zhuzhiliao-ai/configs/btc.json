@@ -1,0 +1,33 @@
+{
+    "id": "btc",
+    "name": "Bitcoin",
+    "subtitle": "数字黄金 · 去中心化货币",
+    "seal": "₿",
+    "category": "加密货币",
+    "description": "比特币诞生于2009年，中本聪打造点对点去中心化电子现金，总量恒定2100万枚，人类首个具备绝对稀缺性的数字资产。",
+    "logo": "bitcoin.svg",
+    "colors": {
+      "accent": "#F7931A",
+      "accentDim": "#dd8210",
+      "paper": "#fff8ee",
+      "ink": "#1c1206",
+      "glow": "#F7931A",
+      "bg": ["#140d04", "#462b0c", "#F7931A"]
+    },
+    "quotes": [
+      "Peer-to-Peer Electronic Cash System",
+      "Trust mathematics, not institutions",
+      "Your keys, your bitcoin",
+      "Absolute scarcity on the internet",
+      "Code is law, ledger is forever",
+      "Money without masters",
+      "Every satoshi carries sovereignty"
+    ],
+    "lore": [
+      "中本聪创世 · 2100万枚上限",
+      "无需许可的全球结算网络"
+    ],
+    "audio": "/assets/audio/clean-bamboo.wav",
+    "echo": "₿",
+    "motif": "bitcoin"
+  }

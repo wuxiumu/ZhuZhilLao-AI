@@ -1,0 +1,35 @@
+{
+  "id": "bamboo",
+  "name": "竹知了",
+  "subtitle": "AI 版的经典之声",
+  "seal": "默认",
+  "category": "经典",
+  "description": "传统竹知了玩具的数字化重现，所有 AI 版本的起点。",
+  "logo": "bamboo.svg",
+  "colors": {
+    "accent": "#e2603f",
+    "accentDim": "#b34a30",
+    "paper": "#f0e6d2",
+    "ink": "#0a1028",
+    "glow": "#e88c54",
+    "bg": [
+      "#0a1028",
+      "#16204a",
+      "#43325a"
+    ]
+  },
+  "quotes": [
+    "传统与科技的交汇",
+    "竹膜为鼓，松香为弦",
+    "摩擦生振，膜腔共鸣",
+    "一转就哇哇叫的童年记忆",
+    "数字时代的手工温度"
+  ],
+  "lore": [
+    "竹膜为鼓 · 松香为弦",
+    "摩擦生振 · 膜腔共鸣"
+  ],
+  "audio": "/assets/audio/clean-bamboo.wav",
+  "echo": "哇",
+  "motif": "bamboo"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "nvidia",
+  "name": "NVIDIA",
+  "subtitle": "GPU 加速 AI",
+  "seal": "GPU",
+  "category": "AI 硬件",
+  "description": "GPU 是 AI 的引擎，NVIDIA 驱动着整个人类文明的 AI 革命。",
+  "logo": "nvidia.svg",
+  "colors": {
+    "accent": "#76B900",
+    "accentDim": "#5e9500",
+    "paper": "#f0f8e0",
+    "ink": "#1a1a1a",
+    "glow": "#76B900",
+    "bg": [
+      "#1a1a1a",
+      "#2d4a00",
+      "#76B900"
+    ]
+  },
+  "quotes": [
+    "The GPU is the engine of AI",
+    "The more you buy, the more you save",
+    "It's kind of a big deal",
+    "Powering the AI revolution",
+    "Accelerating computing, accelerating discovery",
+    "The world's most powerful AI supercomputers",
+    "From gaming to AI, we make it possible",
+    "CUDA: the language of parallel computing"
+  ],
+  "lore": [
+    "CUDA · 深度学习加速",
+    "AI 的算力引擎"
+  ],
+  "audio": "/assets/audio/clean-bamboo.wav",
+  "echo": "Render",
+  "motif": "nvidia"
+}

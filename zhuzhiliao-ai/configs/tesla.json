@@ -1,0 +1,38 @@
+{
+  "id": "tesla",
+  "name": "Tesla",
+  "subtitle": "Optimus 在转",
+  "seal": "EV",
+  "category": "电动汽车",
+  "description": "Tesla 加速世界向可持续能源转变，Optimus 机器人探索未来。",
+  "logo": "tesla.svg",
+  "colors": {
+    "accent": "#E82127",
+    "accentDim": "#b81a1f",
+    "paper": "#fef0f0",
+    "ink": "#171a20",
+    "glow": "#E82127",
+    "bg": [
+      "#171a20",
+      "#4a0a0d",
+      "#E82127"
+    ]
+  },
+  "quotes": [
+    "Accelerating the world's transition to sustainable energy",
+    "The future is electric",
+    "Sustainable energy now",
+    "Driving the future of transportation",
+    "Making electric cars for the masses",
+    "The secret sauce is manufacturing",
+    "Autonomy is the future",
+    "Optimus: the future of robotics"
+  ],
+  "lore": [
+    "自动驾驶 · 机器人",
+    "加速世界向可持续能源转变"
+  ],
+  "audio": "/assets/audio/clean-bamboo.wav",
+  "echo": "Zoom",
+  "motif": "tesla"
+}

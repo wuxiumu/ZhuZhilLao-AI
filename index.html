@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0a1028">
+<meta name="description" content="cgos.cc - 竹知了系列项目展示：经典版、声音 meme 版、AI 公司版，三个版本的竹知了网页游戏，基于真实录音采样与物理模拟，零依赖零构建，手机电脑直开即玩。">
+<meta name="keywords" content="竹知了,竹蝉,拉线蝉,传统玩具,网页游戏,在线玩具,竹知了meme,AI竹知了,OpenAI,Anthropic,Google,Meta,Apple,NVIDIA,Tesla,DJI,Web Audio,Canvas,物理模拟">
+<meta property="og:title" content="cgos.cc - 竹知了系列项目展示">
+<meta property="og:description" content="三个版本的竹知了网页游戏：经典版、声音 meme 版、AI 公司版，基于真实录音采样与物理模拟。">
+<meta property="og:image" content="assets/icons/og-image.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="cgos.cc - 竹知了系列项目展示">
+<meta name="twitter:description" content="三个版本的竹知了网页游戏，基于真实录音采样与物理模拟。">
+<meta name="twitter:image" content="assets/icons/og-image.jpg">
+<title>cgos.cc · 竹知了系列项目展示</title>
+<link rel="stylesheet" href="assets/main.css">
+<link rel="stylesheet" href="assets/chat-widget.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo"><a href="./">zhuzhiliao</a></div>
+      <div class="nav-links" id="nav-links">
+        <a href="#projects" class="active">项目</a>
+        <a href="#stats">统计</a>
+        <a href="guestbook.html">留言</a>
+        <a href="#chat">聊天</a>
+      </div>
+      <button class="menu-btn" id="menu-btn" aria-label="menu">☰</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container" style="position:relative; z-index:1;">
+    <h1>竹<span>知</span>了</h1>
+    <p>传统玩具的 Web 模拟版。按住屏幕画圈甩起来，一转就“哇哇”叫，声音来自真实竹知了的录音采样。</p>
+    <a class="cta" href="zhuzhiliao/" target="_blank">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      去玩玩
+    </a>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">竹知了系列</h2>
+    <p class="section-sub">三个版本的竹知了网页游戏，同一套物理引擎，不同的视觉与声音体验。</p>
+
+    <!-- 经典版 -->
+    <div class="project">
+      <a class="project-visual" href="zhuzhiliao/" target="_blank" title="打开竹知了经典版">
+        <img src="assets/icons/og-image.jpg" alt="竹知了经典版预览">
+        <div class="play"><span>点击试玩</span></div>
+      </a>
+      <div class="project-info">
+        <h2>竹知了 · 经典版</h2>
+        <p>小时候路边摊上几块钱的竹蝉，现在用一张 HTML 文件就能随时甩响。零依赖、零构建、断网也能玩。</p>
+        <p>基于绳系质点物理模拟发声：竹筒是绳系质点，甩得越快、绳越紧，声音越响越亮。声音主源是真实录音采样，解码失败则回退 Web Audio 合成。水墨风背景，星星萤火虫，传统美学。</p>
+        <div class="tag-list">
+          <span class="tag">单文件 HTML</span>
+          <span class="tag">Web Audio</span>
+          <span class="tag">Canvas 2D</span>
+          <span class="tag">水墨风格</span>
+          <span class="tag">物理模拟</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 声音 meme 版 -->
+    <div class="project">
+      <a class="project-visual" href="zhuzhiliao-meme/" target="_blank" title="打开竹知了声音 meme 版">
+        <img src="assets/icons/og-image-2.jpg" alt="竹知了声音 meme 版预览">
+        <div class="play"><span>点击试玩</span></div>
+      </a>
+      <div class="project-info">
+        <h2>竹知了 · 声音 meme 版</h2>
+        <p>同一个甩法，换一副会成梗的声音。7 套声音主题切换：竹知了、冰块、水滴轮、手机支架、鼠标、卷尺、海豹。</p>
+        <p>赛博 HUD 视觉风格，等宽字体，扫描线动画。每个主题都有独立的配色方案、背景图案和音频采样。顶部 Tab 栏一键切换，整个 UI 随主题变色。</p>
+        <div class="tag-list">
+          <span class="tag">7 套声音主题</span>
+          <span class="tag">赛博朋克</span>
+          <span class="tag">WAV 采样</span>
+          <span class="tag">主题切换</span>
+          <span class="tag">动态配色</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI 公司版 -->
+    <div class="project">
+      <a class="project-visual" href="zhuzhiliao-ai/" target="_blank" title="打开竹知了 AI 版">
+        <img src="assets/icons/og-image-3.jpg" alt="竹知了 AI 版预览">
+        <div class="play"><span>点击试玩</span></div>
+      </a>
+      <div class="project-info">
+        <h2>竹知了 · AI 公司版</h2>
+        <p>15 个科技巨头主题：OpenAI、Anthropic、Google、Meta、xAI、Apple、NVIDIA、Tesla、DJI。每个主题都有独特的 logo 圆盘和企业文化名言。</p>
+        <p>旋转的不再是竹筒，而是 AI 公司的 logo 圆盘。背景中半透明显示公司经典语录，如 Apple 的 "Think Different"、NVIDIA 的 "The GPU is the engine of AI"。统一使用知了原声，视觉风格各异。</p>
+        <div class="tag-list">
+          <span class="tag">15 个 AI 主题</span>
+          <span class="tag">企业名言</span>
+          <span class="tag">Logo 圆盘</span>
+          <span class="tag">Canvas 绘制</span>
+          <span class="tag">科技风格</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stats" class="alt">
+  <div class="container">
+    <h2 class="section-title">站点统计</h2>
+    <p class="section-sub">基于 PHP + Redis 实时记录，每 30 秒自动刷新。</p>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="num loading" id="stat-pv">-</div><div class="label">总 PV</div></div>
+      <div class="stat-card"><div class="num loading" id="stat-uv">-</div><div class="label">总 UV</div></div>
+      <div class="stat-card"><div class="num loading" id="stat-today">-</div><div class="label">今日 PV</div></div>
+      <div class="stat-card"><div class="num loading" id="stat-online">-</div><div class="label">在线</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="guestbook" class="alt">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <h2 class="section-title">留言板</h2>
+        <p class="section-sub">输入邮箱即可留言，数据存入 Redis。</p>
+        <form id="guestbook-form">
+          <div class="form-group">
+            <label for="gb-email">邮箱</label>
+            <input type="email" id="gb-email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="gb-message">留言</label>
+            <textarea id="gb-message" required maxlength="500" placeholder="写点什么..."></textarea>
+          </div>
+          <button type="submit" class="btn">提交留言</button>
+          <div class="msg" id="gb-msg"></div>
+        </form>
+      </div>
+      <div>
+        <h2 class="section-title">最近留言</h2>
+        <div class="list" id="guestbook-list"><div class="list-empty">加载中…</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="chat">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <h2 class="section-title">聊天</h2>
+        <p class="section-sub">点击右下角浮动图标，打开全屏聊天室。</p>
+        <div class="card" style="margin-top:18px;">
+          <h3>如何使用</h3>
+          <p>任意页面引入 <code>assets/chat-widget.js</code> 即可在右下角显示聊天入口，支持实时轮询和未读消息计数。</p>
+        </div>
+      </div>
+      <div>
+        <h2 class="section-title">最近消息</h2>
+        <div class="list" id="chat-list"><div class="list-empty">加载中…</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>cgos.cc · 项目展示 · 后端由 PHP + Redis 驱动</p>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/main.js"></script>
+<script src="assets/chat-widget.js"></script>
+</body>
+</html>

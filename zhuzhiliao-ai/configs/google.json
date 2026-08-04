@@ -1,0 +1,38 @@
+{
+  "id": "google",
+  "name": "Google",
+  "subtitle": "Gemini 在转",
+  "seal": "Gemini",
+  "category": "AI 大模型",
+  "description": "Gemini 连接一切，Google 的 AI 技术重塑信息检索与理解。",
+  "logo": "google.svg",
+  "colors": {
+    "accent": "#4285f4",
+    "accentDim": "#3367c4",
+    "paper": "#f0f7ff",
+    "ink": "#0a1028",
+    "glow": "#4285f4",
+    "bg": [
+      "#0a1028",
+      "#1a3d6e",
+      "#2d5aa0"
+    ]
+  },
+  "quotes": [
+    "Organize the world's information",
+    "To provide access to the world's information in one click",
+    "Don't be evil",
+    "AI-first company",
+    "Building a more helpful and capable world for everyone",
+    "Gemini: the most capable and efficient AI model",
+    "Making AI beneficial for everyone",
+    "Information at your fingertips"
+  ],
+  "lore": [
+    "多模态理解 · 谷歌大脑",
+    "Gemini 连接一切"
+  ],
+  "audio": "/assets/audio/clean-bamboo.wav",
+  "echo": "Search",
+  "motif": "google"
+}

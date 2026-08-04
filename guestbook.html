@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0a1028">
+<meta name="description" content="cgos.cc 留言板：留下你的想法，顶部滚动展示最新留言。">
+<title>留言板 · cgos.cc</title>
+<link rel="stylesheet" href="assets/main.css">
+<link rel="stylesheet" href="assets/chat-widget.css">
+<style>
+  /* 顶部滚动留言条 */
+  .ticker-wrap{
+    position:fixed; top:64px; left:0; right:0; z-index:40;
+    background:rgba(226,96,63,.12); border-bottom:1px solid rgba(226,96,63,.2);
+    overflow:hidden; padding:10px 0;
+  }
+  .ticker-track{
+    display:flex; white-space:nowrap; animation:ticker 24s linear infinite;
+  }
+  .ticker-item{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:0 40px; font-size:14px; color:rgba(240,230,210,.85);
+  }
+  .ticker-item .email{ color:var(--accent); font-weight:500; }
+  .ticker-item .dot{ width:5px; height:5px; border-radius:50%; background:var(--accent); }
+  .ticker-empty{ width:100%; text-align:center; color:rgba(240,230,210,.5); font-size:13px; }
+  @keyframes ticker{ 0%{ transform:translateX(0); } 100%{ transform:translateX(-50%); } }
+
+  /* 主内容区给滚动条留出空间 */
+  .gb-main{ padding-top:140px; }
+  @media (max-width:800px){ .gb-main{ padding-top:120px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo"><a href="./">cgos.cc</a></div>
+      <div class="nav-links" id="nav-links">
+        <a href="./">首页</a>
+        <a href="guestbook.html" class="active">留言</a>
+      </div>
+      <button class="menu-btn" id="menu-btn" aria-label="menu">☰</button>
+    </nav>
+  </div>
+</header>
+
+<div class="ticker-wrap">
+  <div class="container" style="overflow:hidden;">
+    <div id="ticker" class="ticker-track"><span class="ticker-empty">加载最新留言…</span></div>
+  </div>
+</div>
+
+<section class="gb-main">
+  <div class="container">
+    <h2 class="section-title">留言板</h2>
+    <p class="section-sub">输入邮箱即可留言，最新留言会在顶部滚动展示。</p>
+    <div class="two-col">
+      <div>
+        <form id="guestbook-form">
+          <div class="form-group">
+            <label for="gb-email">邮箱</label>
+            <input type="email" id="gb-email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="gb-message">留言</label>
+            <textarea id="gb-message" required maxlength="500" placeholder="写点什么..."></textarea>
+          </div>
+          <button type="submit" class="btn">提交留言</button>
+          <div class="msg" id="gb-msg"></div>
+        </form>
+      </div>
+      <div>
+        <h2 class="section-title" style="font-size:22px;">全部留言</h2>
+        <div class="list" id="guestbook-list"><div class="list-empty">加载中…</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>cgos.cc · 留言板 · 后端由 PHP + Redis 驱动</p>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/main.js"></script>
+<script src="assets/chat-widget.js"></script>
+</body>
+</html>
