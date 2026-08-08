@@ -53,6 +53,7 @@ nav{ display:flex; align-items:center; justify-content:space-between; height:64p
 }
 .hero h1 span{ color:var(--accent); }
 .hero p{ font-size:clamp(15px,2.2vw,20px); color:rgba(240,230,210,.75); max-width:620px; margin:0 auto 36px; }
+.hero-actions{ display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; }
 .cta{
   display:inline-flex; align-items:center; gap:10px;
   padding:14px 34px; border-radius:999px; border:1px solid var(--accent);
@@ -60,6 +61,8 @@ nav{ display:flex; align-items:center; justify-content:space-between; height:64p
   transition:all .25s; background:transparent; cursor:pointer;
 }
 .cta:hover{ background:var(--accent); color:#fff; text-decoration:none; }
+.cta-create{ background:var(--accent); color:#fff; }
+.cta-create:hover{ background:#f07150; box-shadow:0 8px 30px rgba(226,96,63,.25); }
 .cta svg{ width:18px; height:18px; }
 
 /* 卡片通用 */

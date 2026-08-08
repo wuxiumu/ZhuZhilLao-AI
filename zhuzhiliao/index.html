@@ -73,16 +73,10 @@
   ]
 }
 </script>
-<script
-  defer
-  src="https://vibecafe.ai/telemetry/v1.js"
-  data-vc-product-id="cmsap4sw000000ahz2kvrogxg"
-  data-vc-auth-key="vc_web_Kt9i5rZoGPGWQHRT5Kdy1Q8qOz4Y-97Pccs-RIdxLDg"
-></script>
 <title>竹知了 · 一转就哇哇叫｜竹蝉玩具免费在线玩</title>
 <script src="../assets/config.js"></script>
 <script type="importmap">
-{"imports":{ "three":"./3d/vendor/three.module.min.js" }}
+{"imports":{ "three":"../assets/3d/vendor/three.module.min.js" }}
 </script>
 <style>
   :root{
@@ -218,6 +212,7 @@
   .ghlink:hover{ opacity:1; border-color:var(--accent); color:#ffcf9e; box-shadow:0 0 16px rgba(226,96,63,.25); }
   .ghlink.author{ top:calc(64px + env(safe-area-inset-top)); }
   .ghlink.install{ top:calc(104px + env(safe-area-inset-top)); cursor:pointer; }
+  .ghlink.create{ top:calc(144px + env(safe-area-inset-top)); opacity:.88; border-color:rgba(226,96,63,.68); }
 
   /* —— iOS 添加到主屏幕指引 —— */
   .installtip{
@@ -274,6 +269,7 @@
     .ghlink{ font-size:10.5px; padding:5px 10px 5px 13px; }
     .ghlink.author{ top:calc(56px + env(safe-area-inset-top)); }
     .ghlink.install{ top:calc(90px + env(safe-area-inset-top)); }
+    .ghlink.create{ top:calc(124px + env(safe-area-inset-top)); }
     .stats{
       left:calc(12px + env(safe-area-inset-left));
       transform:none;
@@ -330,6 +326,7 @@
 <a class="ghlink" id="ghlink" target="_blank" rel="noopener">开源 GitHub</a>
 <a class="ghlink install" id="installBtn" role="button">装进桌面</a>
 <a class="ghlink author" href="../index.html">首页</a>
+<a class="ghlink create" href="../zhuzhiliao-mvp/">创建我的知了</a>
 
 <!-- 无 JS 环境（含不执行 JS 的爬虫）能读到的唯一正文；正常用户不可见 -->
 <noscript>
