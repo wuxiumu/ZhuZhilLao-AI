@@ -12,7 +12,7 @@
         accent: '#e76543',
         background: '#09152a',
         size: 112,
-        speed: 1.2,
+        speed: 0.2,
         radius: 70,
         rope: 155,
         volume: .75
@@ -126,7 +126,11 @@
         const shareWords = window.ZZL_SHARE_CONFIG?.locales?.[locale];
         if (shareWords) {
             $('posterShareBtn').textContent = shareWords.posterOpen;
-            $('viewerPosterShare').textContent = shareWords.posterOpen
+            $('viewerPosterShare').textContent = shareWords.posterOpen;
+            $('previewShareBtn').textContent = shareWords.previewWork;
+            $('mobilePreviewToggle').querySelector('span').textContent = document.body.classList.contains('mobile-preview-open')
+                ? shareWords.mobilePreviewClose
+                : shareWords.mobilePreviewOpen
         }
         $('limitPolicy').textContent = t('limitPolicy', {
             perIp: APP_LIMITS.perIp,
@@ -184,6 +188,12 @@
         for (const k of ['size', 'speed', 'radius', 'rope']) $(k + 'Value').textContent = config[k];
         $('volumeValue').textContent = Math.round(config.volume * 100) + '%';
         document.documentElement.style.setProperty('--accent', config.accent);
+        document.querySelectorAll('.color-swatch').forEach(button => {
+            const input = $(button.dataset.colorTarget);
+            const selected = input && input.value.toLowerCase() === button.dataset.color.toLowerCase();
+            button.classList.toggle('active', selected);
+            button.setAttribute('aria-pressed', selected ? 'true' : 'false')
+        });
         syncViewer();
     }
 
@@ -238,6 +248,20 @@
         if (!$('myTabPanel').hidden) loadMine()
     };
     for (const id of ['titleInput', 'subtitleInput', 'echoArrayInput', 'accentInput', 'backgroundInput', 'sizeInput', 'speedInput', 'radiusInput', 'ropeInput', 'volumeInput']) $(id).addEventListener('input', readControls);
+    document.querySelectorAll('.color-swatch').forEach(button => {
+        button.onclick = () => {
+            const input = $(button.dataset.colorTarget);
+            input.value = button.dataset.color;
+            readControls()
+        }
+    });
+    $('mobilePreviewToggle').onclick = () => {
+        const open = document.body.classList.toggle('mobile-preview-open');
+        $('mobilePreviewToggle').setAttribute('aria-expanded', open ? 'true' : 'false');
+        const words = window.ZZL_SHARE_CONFIG?.locales?.[locale];
+        if (words) $('mobilePreviewToggle').querySelector('span').textContent = open ? words.mobilePreviewClose : words.mobilePreviewOpen;
+        if (open) requestAnimationFrame(() => window.dispatchEvent(new Event('resize')))
+    };
     $('echoSingleBtn').onclick = () => {
         echoMode = 'single';
         config.echoMode = echoMode;
@@ -393,6 +417,11 @@
     function drawScene(now) {
         const rect = canvas.getBoundingClientRect(),
             dpr = Math.min(devicePixelRatio || 1, 2);
+        if (rect.width < 2 || rect.height < 2) {
+            last = now;
+            requestAnimationFrame(drawScene);
+            return
+        }
         if (canvas.width !== Math.round(rect.width * dpr) || canvas.height !== Math.round(rect.height * dpr)) {
             canvas.width = Math.round(rect.width * dpr);
             canvas.height = Math.round(rect.height * dpr)

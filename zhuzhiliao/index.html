@@ -212,7 +212,22 @@
   .ghlink:hover{ opacity:1; border-color:var(--accent); color:#ffcf9e; box-shadow:0 0 16px rgba(226,96,63,.25); }
   .ghlink.author{ top:calc(64px + env(safe-area-inset-top)); }
   .ghlink.install{ top:calc(104px + env(safe-area-inset-top)); cursor:pointer; }
-  .ghlink.create{ top:calc(144px + env(safe-area-inset-top)); opacity:.88; border-color:rgba(226,96,63,.68); }
+  .ghlink.create{
+    top:calc(144px + env(safe-area-inset-top));
+    color:#fff7ef; opacity:1;
+    background:linear-gradient(135deg, #e94f37, #c9362d);
+    border-color:rgba(255,155,128,.92);
+    box-shadow:0 0 0 0 rgba(233,79,55,.42), 0 8px 24px rgba(156,32,26,.34);
+    animation:zzlCreateGlow 2.2s ease-in-out infinite;
+  }
+  .ghlink.create:hover{
+    color:#fff; border-color:#ffc0aa;
+    box-shadow:0 0 0 5px rgba(233,79,55,.14), 0 10px 30px rgba(233,79,55,.46);
+  }
+  @keyframes zzlCreateGlow{
+    0%,100%{ transform:scale(1); box-shadow:0 0 0 0 rgba(233,79,55,.38), 0 8px 24px rgba(156,32,26,.30); }
+    50%{ transform:scale(1.045); box-shadow:0 0 0 6px rgba(233,79,55,0), 0 10px 30px rgba(233,79,55,.48); }
+  }
 
   /* —— iOS 添加到主屏幕指引 —— */
   .installtip{
@@ -283,6 +298,7 @@
     .hint .snd{ display:none; }
   }
   @media (prefers-reduced-motion:reduce){
+    .ghlink.create{ animation:none; }
     .hint, .hint svg{ animation:none; }
   }
 
