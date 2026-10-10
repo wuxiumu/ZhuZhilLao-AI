@@ -34,7 +34,8 @@ ok "首页 200"
 curl -sf "http://127.0.0.1:${PORT}/zhuzhiliao/" >/dev/null || fail "经典版失败"
 ok "经典版可访问"
 # health 可能依赖 redis；允许降级
-code=$(curl -s -o /tmp/zzl-health.out -w '%{http_code}' "http://127.0.0.1:${PORT}/api/health.php" || true)
-ok "health HTTP $code（无 Redis 时可能非 200，属预期）"
+HC=$(curl -s -o /tmp/zzl-health.out -w "%{http_code}" "http://127.0.0.1:${PORT}/api/health.php" || echo "000")
+ok "health HTTP ${HC}（无 Redis 时可能非 200，属预期）"
+
 
 echo ""; echo "smoke: ok"
