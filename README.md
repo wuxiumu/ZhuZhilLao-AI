@@ -34,6 +34,19 @@ REDIS_HOST=127.0.0.1 php -S localhost:8099
 
 前端接口基址见 `assets/config.js` 的 `API_BASE`。
 
+
+## 环境变量
+
+复制 `.env.example` → `.env`。生产务必设置 `ZZL_ADMIN_PASSWORD` 与 `ZZL_IP_HASH_KEY`（默认管理员密码已改为空，需自行配置）。
+
+## 冒烟自检
+
+```bash
+bash scripts/smoke.sh
+```
+
+无 Redis 也可检查静态页与 PHP 语法；留言/统计接口需 Redis。
+
 ## 定制合作（可报价）
 
 - 品牌皮肤 / 音效包 / 道具数值  
