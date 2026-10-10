@@ -1,0 +1,33 @@
+{
+    "id": "usdt",
+    "name": "Tether",
+    "subtitle": "稳定币之王 · 数字美元",
+    "seal": "₮",
+    "category": "加密货币",
+    "description": "Tether (USDT) 是全球使用最广泛的稳定币，1:1 锚定美元，为加密市场提供流动性基石，日交易量超越多数传统金融资产。",
+    "logo": "tether.svg",
+    "colors": {
+      "accent": "#26A17B",
+      "accentDim": "#1e8564",
+      "paper": "#f0f9f5",
+      "ink": "#0a1a14",
+      "glow": "#26A17B",
+      "bg": ["#0a1a14", "#1a4d3a", "#26A17B"]
+    },
+    "quotes": [
+      "Every USDT is Backed by Real Reserves",
+      "Stability in a Volatile World",
+      "The Dollar, Digitized",
+      "Liquidity for the Crypto Economy",
+      "Trust Through Transparency",
+      "Bridging Fiat and Crypto",
+      "Global Stablecoin Standard"
+    ],
+    "lore": [
+      "1:1 美元锚定 · 透明储备",
+      "加密市场的流动性基石"
+    ],
+    "audio": "/assets/audio/clean-bamboo.wav",
+    "echo": "₮",
+    "motif": "tether"
+  }

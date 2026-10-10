@@ -1,0 +1,38 @@
+{
+  "id": "meta",
+  "name": "Meta",
+  "subtitle": "LLaMA 在转",
+  "seal": "LLaMA",
+  "category": "开源 AI",
+  "description": "LLaMA 开源了智能，Meta 推动社交与 AI 的融合。",
+  "logo": "meta.svg",
+  "colors": {
+    "accent": "#0668E1",
+    "accentDim": "#0552b8",
+    "paper": "#f0f7ff",
+    "ink": "#0a1028",
+    "glow": "#0668E1",
+    "bg": [
+      "#0a1028",
+      "#1a3d6e",
+      "#0668E1"
+    ]
+  },
+  "quotes": [
+    "Give people the power to build community",
+    "Move fast and build awesome things",
+    "The future is social",
+    "Open source AI for everyone",
+    "Building the metaverse",
+    "Connect people, build community, grow business",
+    "Democratizing AI through open source",
+    "LLaMA: open weights, open research"
+  ],
+  "lore": [
+    "开源大模型 · 元宇宙探索",
+    "LLaMA 开源了智能"
+  ],
+  "audio": "/assets/audio/clean-bamboo.wav",
+  "echo": "Connect",
+  "motif": "meta"
+}

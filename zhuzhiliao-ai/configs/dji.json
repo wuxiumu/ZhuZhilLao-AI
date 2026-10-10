@@ -1,0 +1,38 @@
+{
+  "id": "dji",
+  "name": "DJI",
+  "subtitle": "天空之眼",
+  "seal": "Drone",
+  "category": "无人机",
+  "description": "DJI 用无人机改变我们观看世界的方式，The Future of Possible。",
+  "logo": "dji.svg",
+  "colors": {
+    "accent": "#FF4500",
+    "accentDim": "#cc3700",
+    "paper": "#fff5f0",
+    "ink": "#1a1a1a",
+    "glow": "#FF4500",
+    "bg": [
+      "#1a1a1a",
+      "#4a1400",
+      "#FF4500"
+    ]
+  },
+  "quotes": [
+    "The Future of Possible",
+    "See the world from a new perspective",
+    "Push the boundaries of imagination",
+    "Innovation for a better world",
+    "The sky is not the limit",
+    "Future of possible, future of imaging",
+    "Making aerial robotics accessible to everyone",
+    "Capture the world from above"
+  ],
+  "lore": [
+    "航拍 · 影像技术",
+    "The Future of Possible"
+  ],
+  "audio": "/assets/audio/clean-bamboo.wav",
+  "echo": "Fly",
+  "motif": "dji"
+}

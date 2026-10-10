@@ -1,0 +1,33 @@
+{
+    "id": "eth",
+    "name": "Ethereum",
+    "subtitle": "智能合约平台 · Web3 基石",
+    "seal": "Ξ",
+    "category": "加密货币",
+    "description": "以太坊由 Vitalik Buterin 于2015年创建，开创智能合约先河，支撑 DeFi、NFT、DAO 整个生态，从数字货币进化为全球计算机。",
+    "logo": "ethereum.svg",
+    "colors": {
+      "accent": "#627EEA",
+      "accentDim": "#4a63c7",
+      "paper": "#f0f4ff",
+      "ink": "#0f1419",
+      "glow": "#627EEA",
+      "bg": ["#0f1419", "#2a3a6e", "#627EEA"]
+    },
+    "quotes": [
+      "World Computer",
+      "Programmable Money",
+      "Decentralized Applications for Everyone",
+      "Code is Law",
+      "The Internet of Value",
+      "Smart Contracts, Smart Future",
+      "Building the Backend of Web3"
+    ],
+    "lore": [
+      "Vitalik 创世 · 智能合约革命",
+      "DeFi · NFT · DAO 生态基石"
+    ],
+    "audio": "/assets/audio/clean-bamboo.wav",
+    "echo": "Ξ",
+    "motif": "ethereum"
+  }

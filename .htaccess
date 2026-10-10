@@ -1,0 +1,12 @@
+# 禁用目录索引
+Options -Indexes
+
+# 可选：把 /api/stats 重写为 /api/stats.php（当前接口均使用 .php 扩展名）
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^api/(.*)$ /api/$1.php [L,QSA]
+</IfModule>
+
+# 注意：CORS 头在 PHP 接口中统一设置，此处不再重复配置。

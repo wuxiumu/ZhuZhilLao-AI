@@ -1,0 +1,37 @@
+{
+  "id": "xai",
+  "name": "xAI",
+  "subtitle": "Grok 在转",
+  "seal": "Grok",
+  "category": "AI 大模型",
+  "description": "Grok 以幽默和理解宇宙为目标，xAI 探索 AI 的边界。",
+  "logo": "xai.svg",
+  "colors": {
+    "accent": "#1d9bf0",
+    "accentDim": "#1a8cd8",
+    "paper": "#f0f9ff",
+    "ink": "#0a1028",
+    "glow": "#1d9bf0",
+    "bg": [
+      "#0a1028",
+      "#1a3d6e",
+      "#1d9bf0"
+    ]
+  },
+  "quotes": [
+    "Understand the true nature of the universe",
+    "Maximum truth-seeking, minimum censorship",
+    "AI that is maximally curious",
+    "Answer the questions humans are afraid to ask",
+    "Built to be helpful, truthful, and curious",
+    "The universe is waiting to be understood",
+    "Grok: the AI with a sense of humor"
+  ],
+  "lore": [
+    "理解宇宙 · 幽默 AI",
+    "Grok 知道一切"
+  ],
+  "audio": "/assets/audio/clean-bamboo.wav",
+  "echo": "Grok",
+  "motif": "xai"
+}

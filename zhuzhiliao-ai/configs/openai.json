@@ -1,0 +1,37 @@
+{
+  "id": "openai",
+  "name": "OpenAI",
+  "subtitle": "ChatGPT 在转",
+  "seal": "GPT",
+  "category": "AI 大模型",
+  "description": "ChatGPT 改变了世界，让 AI 走进每个人的日常生活。",
+  "logo": "openai.svg",
+  "colors": {
+    "accent": "#10a37f",
+    "accentDim": "#0d8a6a",
+    "paper": "#f0fdf4",
+    "ink": "#0a1028",
+    "glow": "#10a37f",
+    "bg": [
+      "#0a1028",
+      "#0d3d2f",
+      "#1a5c47"
+    ]
+  },
+  "quotes": [
+    "AGI for the benefit of humanity",
+    "We believe AI should be safe and beneficial",
+    "Creating safe artificial general intelligence",
+    "Our technology should be broadly distributed",
+    "AI should be a tool for humans, not a replacement",
+    "The future of AI is collaborative, not competitive",
+    "Building AI that benefits all of humanity"
+  ],
+  "lore": [
+    "大规模预训练 · 人类反馈强化学习",
+    "ChatGPT 改变了世界"
+  ],
+  "audio": "/assets/audio/clean-bamboo.wav",
+  "echo": "Chat",
+  "motif": "openai"
+}

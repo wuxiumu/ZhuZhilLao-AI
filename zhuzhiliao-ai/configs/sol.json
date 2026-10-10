@@ -1,0 +1,33 @@
+{
+    "id": "sol",
+    "name": "Solana",
+    "subtitle": "高性能区块链 · 极速交易",
+    "seal": "◎",
+    "category": "加密货币",
+    "description": "Solana 以每秒 65,000 笔交易和超低 gas 费著称，采用历史证明 (Proof of History) 共识机制，是 DeFi、NFT、GameFi 的热门选择。",
+    "logo": "solana.svg",
+    "colors": {
+      "accent": "#9945FF",
+      "accentDim": "#7a37cc",
+      "paper": "#f5f0ff",
+      "ink": "#0f0a1a",
+      "glow": "#9945FF",
+      "bg": ["#0f0a1a", "#3d1a66", "#9945FF"]
+    },
+    "quotes": [
+      "Speed Without Compromise",
+      "65,000 Transactions Per Second",
+      "Proof of History, Proof of Speed",
+      "The Fastest Blockchain on Earth",
+      "Low Cost, High Throughput",
+      "Built for Mass Adoption",
+      "Solana Summer Never Ends"
+    ],
+    "lore": [
+      "历史证明共识 · 极速交易",
+      "DeFi · NFT · GameFi 新星"
+    ],
+    "audio": "/assets/audio/clean-bamboo.wav",
+    "echo": "◎",
+    "motif": "solana"
+  }

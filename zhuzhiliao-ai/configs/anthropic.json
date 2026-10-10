@@ -1,0 +1,38 @@
+{
+  "id": "anthropic",
+  "name": "Anthropic",
+  "subtitle": "Claude 在转",
+  "seal": "Claude",
+  "category": "AI 安全",
+  "description": "Claude 以安全和深度思考著称，是 AI 安全领域的先驱。",
+  "logo": "anthropic.svg",
+  "colors": {
+    "accent": "#d4a574",
+    "accentDim": "#b38a5c",
+    "paper": "#fdf6ed",
+    "ink": "#1a1410",
+    "glow": "#d4a574",
+    "bg": [
+      "#1a1410",
+      "#3d2e1f",
+      "#5c4633"
+    ]
+  },
+  "quotes": [
+    "Build reliable, interpretable, and steerable AI",
+    "AI safety is not optional, it's essential",
+    "Constitutional AI: aligning AI with human values",
+    "We study AI systems to understand their behavior",
+    "Safe, beneficial, and understandable AI",
+    "AI should be helpful, harmless, and honest",
+    "Reducing the risks of AI is our top priority",
+    "Building AI systems that are reliable and transparent"
+  ],
+  "lore": [
+    "Constitutional AI · 安全对齐",
+    "Claude 思考得更深"
+  ],
+  "audio": "/assets/audio/clean-bamboo.wav",
+  "echo": "Think",
+  "motif": "anthropic"
+}

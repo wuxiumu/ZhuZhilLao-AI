@@ -1,0 +1,22 @@
+# 系统
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+.claude/
+
+# 日志与临时文件
+*.log
+*.tmp
+
+# Docker 本地数据
+.redis-data/
+
+# 环境变量
+.env
+.dev.vars
+
+zhuzhiliao-studio/
+zhuzhiliao-mvp/data/

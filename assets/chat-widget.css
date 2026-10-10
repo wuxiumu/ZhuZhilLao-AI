@@ -1,0 +1,107 @@
+/* 聊天室弹窗组件 */
+
+.cgw-hidden{ display:none !important; }
+
+/* 浮动图标 */
+.cgw-fab{
+  position:fixed; right:22px; bottom:calc(22px + env(safe-area-inset-bottom));
+  width:56px; height:56px; border-radius:50%;
+  background:var(--accent, #e2603f); color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 6px 20px rgba(0,0,0,.35);
+  cursor:pointer; z-index:1000; border:none; outline:none;
+  transition:transform .2s, background .2s;
+  bottom:calc(80px + env(safe-area-inset-bottom));
+}
+.cgw-fab:hover{ transform:scale(1.05); background:var(--accent-dim, #b34a30); }
+.cgw-fab svg{ width:26px; height:26px; }
+
+.cgw-badge{
+  position:absolute; top:-2px; right:-2px; min-width:20px; height:20px;
+  background:#fff; color:var(--accent, #e2603f); border-radius:999px;
+  font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center;
+  padding:0 5px; border:2px solid var(--accent, #e2603f);
+}
+.cgw-badge.cgw-hidden{ display:none !important; }
+
+/* 弹窗遮罩 */
+.cgw-overlay{
+  position:fixed; top:0; left:0; right:0; bottom:0; z-index:2000;
+  background:rgba(10,16,40,.88); backdrop-filter:blur(6px);
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; pointer-events:none; transition:opacity .25s;
+}
+.cgw-overlay.open{ opacity:1; pointer-events:auto; }
+
+/* 弹窗容器 */
+.cgw-modal{
+  width:92vw; max-width:620px;
+  height:88vh; max-height:760px;
+  background:var(--ink, #0a1028); border:1px solid rgba(240,230,210,.12);
+  border-radius:18px; display:flex; flex-direction:column; overflow:hidden;
+  box-shadow:0 24px 80px rgba(0,0,0,.5);
+  transform:scale(.96); transition:transform .25s;
+}
+.cgw-overlay.open .cgw-modal{ transform:scale(1); }
+
+/* 弹窗头部 */
+.cgw-header{
+  padding:16px 20px; border-bottom:1px solid rgba(240,230,210,.1);
+  display:flex; align-items:center; justify-content:space-between;
+}
+.cgw-header h3{
+  font-family:var(--serif, "Songti SC", serif); font-size:18px; letter-spacing:.12em;
+  color:var(--paper, #f0e6d2); margin:0;
+}
+.cgw-close{
+  background:none; border:none; color:rgba(240,230,210,.7); cursor:pointer;
+  width:34px; height:34px; display:flex; align-items:center; justify-content:center;
+  border-radius:50%; transition:background .2s, color .2s;
+}
+.cgw-close:hover{ background:rgba(240,230,210,.1); color:var(--paper, #f0e6d2); }
+.cgw-close svg{ width:20px; height:20px; }
+
+/* 消息列表 */
+.cgw-body{
+  flex:1; overflow-y:auto; padding:18px; scroll-behavior:smooth;
+}
+.cgw-empty{
+  text-align:center; color:rgba(240,230,210,.45); padding:40px 0; font-size:14px;
+}
+.cgw-message{
+  margin-bottom:14px; animation:cgwFadeIn .35s ease;
+}
+.cgw-message:last-child{ margin-bottom:0; }
+.cgw-message-meta{
+  display:flex; justify-content:space-between; font-size:12px; color:rgba(240,230,210,.5); margin-bottom:4px;
+}
+.cgw-message-body{
+  font-size:14px; color:rgba(240,230,210,.9); line-height:1.6; word-break:break-word;
+  background:rgba(240,230,210,.06); padding:10px 14px; border-radius:12px;
+}
+.cgw-message.self .cgw-message-body{ background:rgba(226,96,63,.18); }
+@keyframes cgwFadeIn{ from{ opacity:0; transform:translateY(6px); } to{ opacity:1; transform:translateY(0); } }
+
+/* 输入区 */
+.cgw-footer{
+  padding:14px 18px 18px; border-top:1px solid rgba(240,230,210,.1);
+}
+.cgw-input-wrap{ display:flex; gap:10px; }
+.cgw-input{
+  flex:1; background:rgba(240,230,210,.08); border:1px solid rgba(240,230,210,.15);
+  color:var(--paper, #f0e6d2); border-radius:10px; padding:11px 14px; font-size:14px; outline:none;
+}
+.cgw-input:focus{ border-color:var(--accent, #e2603f); }
+.cgw-send{
+  padding:10px 22px; border-radius:10px; border:1px solid var(--accent, #e2603f);
+  background:transparent; color:var(--paper, #f0e6d2); cursor:pointer; font-size:14px;
+  transition:all .2s;
+}
+.cgw-send:hover{ background:var(--accent, #e2603f); color:#fff; }
+.cgw-send:disabled{ opacity:.5; cursor:not-allowed; }
+.cgw-msg{ margin-top:8px; font-size:12px; min-height:18px; color:var(--bamboo, #a8b06a); }
+.cgw-msg.error{ color:var(--accent, #e2603f); }
+
+@media (max-width:600px){
+  .cgw-modal{ width:100vw; height:100vh; border-radius:0; }
+}
